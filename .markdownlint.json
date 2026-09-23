@@ -1,0 +1,16 @@
+{
+  "default": true,
+  "MD001": false,
+  "MD004": {
+    "style": "asterisk"
+  },
+  "MD007": false,
+  "MD013": false,
+  "MD024": {
+    "siblings_only": true
+  },
+  "MD033": {
+    "allowed_elements": ["img", "br"]
+  },
+  "MD041": false
+}

@@ -1,0 +1,4 @@
+# Direct dependencies for the link-checking tooling.
+# Compile with: pip-compile --output-file requirements.txt requirements.in
+requests
+pytest

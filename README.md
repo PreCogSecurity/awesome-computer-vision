@@ -7,6 +7,28 @@ For a list people in computer vision listed with their academic genealogy, pleas
 ## Contributing
 Please feel free to send me [pull requests](https://github.com/jbhuang0604/awesome-computer-vision/pulls) or email (jbhuang1@illinois.edu) to add links.
 
+## Development
+
+This repository contains a curated list of computer vision resources and a
+link-checker tool. To work on the tooling:
+
+```bash
+# Install dependencies (Python 3.11+)
+python -m pip install -r requirements.txt
+
+# Run the test suite
+python -m pytest -q
+
+# Lint markdown files (requires Node.js)
+npx --yes markdownlint-cli2 "*.md"
+
+# Check external links in markdown files for rot
+python scripts/check_links.py README.md people.md CONTRIBUTING.md
+```
+
+CI runs all three checks (markdownlint, link check, Python tests) on every
+push and pull request via GitHub Actions.
+
 ## Table of Contents
 
  - [Books](#books)
@@ -487,7 +509,7 @@ Non-uniform Deblurring
 
 #### Attributes
 
-#### Action Reconition
+#### Action Recognition
 
 #### Egocentric cameras
 
@@ -625,8 +647,8 @@ Non-uniform Deblurring
  * [Microsoft COCO](http://mscoco.org/)
 
 #### Scene Understanding
- # [SUN RGB-D](http://rgbd.cs.princeton.edu/) - A RGB-D Scene Understanding Benchmark Suite
- # [NYU depth v2](http://cs.nyu.edu/~silberman/datasets/nyu_depth_v2.html) - Indoor Segmentation and Support Inference from RGBD Images
+ * [SUN RGB-D](http://rgbd.cs.princeton.edu/) - A RGB-D Scene Understanding Benchmark Suite
+ * [NYU depth v2](http://cs.nyu.edu/~silberman/datasets/nyu_depth_v2.html) - Indoor Segmentation and Support Inference from RGBD Images
 
 ## Resources for students
 
@@ -647,7 +669,7 @@ Non-uniform Deblurring
  * [Writing Research Papers](http://www.dgp.toronto.edu/~hertzman/advice/writing-technical-papers.pdf) - Aaron Hertzmann (Adobe Research)
  * [How to Write a Paper for SIGGRAPH](http://www.computer.org/csdl/mags/cg/1987/12/mcg1987120062.pdf) - Jim Blinn
  * [How to Get Your SIGGRAPH Paper Rejected](http://www.siggraph.org/sites/default/files/kajiya.pdf) - Jim Kajiya (Microsoft Research)
- * [How to write a SIGGRAPH paper](www.liyiwei.org/courses/how-siga11/liyiwei.pptx) - Li-Yi Wei (The University of Hong Kong)
+ * [How to write a SIGGRAPH paper](http://www.liyiwei.org/courses/how-siga11/liyiwei.pptx) - Li-Yi Wei (The University of Hong Kong)
  * [How to Write a Great Paper](http://www-hagen.informatik.uni-kl.de/~bertram/talks/getpublished.pdf) - Martin Martin Hering Hering--Bertram (Hochschule Bremen University of Applied Sciences)
  * [How to have a paper get into SIGGRAPH?](http://www-ui.is.s.u-tokyo.ac.jp/~takeo/writings/siggraph.html) - Takeo Igarashi (The University of Tokyo)
  * [Good Writing](http://www.cs.cmu.edu/~pausch/Randy/Randy/raibert.htm) - Marc H. Raibert (Boston Dynamics, Inc.)
@@ -686,7 +708,7 @@ Non-uniform Deblurring
 * [The Computer Vision Industry](http://www.cs.ubc.ca/~lowe/vision.html) - David Lowe
 * [German Computer Vision Research Groups & Companies](http://hci.iwr.uni-heidelberg.de/Links/German_Vision/)
 * [awesome-deep-learning](https://github.com/ChristosChristofidis/awesome-deep-learning)
-* [awesome-maching-learning](https://github.com/josephmisiti/awesome-machine-learning)
+* [awesome-machine-learning](https://github.com/josephmisiti/awesome-machine-learning)
 * [Cat Paper Collection](http://www.eecs.berkeley.edu/~junyanz/cat/cat_papers.html)
 
 ## Songs
@@ -699,4 +721,4 @@ License
 
 [![CC0](http://i.creativecommons.org/p/zero/1.0/88x31.png)](http://creativecommons.org/publicdomain/zero/1.0/)
 
-To the extent possible under law, [Jia-Bin Huang](www.jiabinhuang.com) has waived all copyright and related or neighboring rights to this work.
+To the extent possible under law, [Jia-Bin Huang](http://www.jiabinhuang.com) has waived all copyright and related or neighboring rights to this work.
